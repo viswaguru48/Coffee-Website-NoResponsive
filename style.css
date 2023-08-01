@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #ffff;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    margin-left: 32px;
+    margin-top: 5px;
+}
+
+.navlinks{
+    display: flex;
+    margin-right: 10px;
+}
+
+.navlinks li{
+    list-style-type: none;
+}
+
+.navlinks li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.5);
+    margin-right: 15px;
+    font-size:medium;
+}
+
+.navlinks li a:hover{
+    color: rgb(20, 20, 20);
+}
+
+/* section - home */
+
+#home{
+    background-image: url(images/home-bg.jpg);
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    min-height: 37rem;
+    padding: 17rem 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.homeContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: auto;
+    padding: 0px 180px 0px 50px ;
+    line-height: 30px;
+}
+
+.homecontents{
+    /* border: 1px solid black; */
+    /* padding: 100px 0; */
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.parahome{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.AboutusBtn{
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffff;
+}
+
+.AboutusBtn:hover{
+    background-color: #006bdd;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+/* Home End */
+
+/* About Page Start */
+
+#about{
+    margin: 0 8%;
+    border: 1px solid #dee2e6
+}
+
+.abtcontents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+    min-height: 34rem;
+}
+
+.bgimg{
+    background-image: url(images/about-img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-right: 1px solid #dee2e6;
+    padding: 20px;
+}
+
+.abttexts{
+    background-color: #17a2b8;
+    height: 21rem;
+    margin: 0px 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 35px;
+}
+
+.paraabt{
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-right: 30px;
+}
+
+/* About Page End */
+
+/* Menu Page Start */
+
+#menu{
+    margin: 0 8%;
+    border:  1px solid #dee2e6;
+    border-top: 0;
+}
+
+.facicontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+    /* min-height: 13rem; */
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+.facility{
+    padding-left: 15px;
+    font-weight: 350;
+    padding-right: 10px;
+    border: 1px solid #dee2e6;
+
+}
+
+.faci{
+    margin-bottom: 18px;
+}
+
+.faci1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Menu Page End */
+
+/* Popular Page Start */
+
+#popularmenu{
+    margin: 0 8%;
+    border:  1px solid #dee2e6;
+    border-top: 0;
+}
+
+.headof{
+    font-size: 1.7rem;
+}
+
+.popmenucontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+}
+
+.coffees{
+    border: 1px solid #dee2e6;
+    padding: 0px 15px;
+
+}
+
+.cof1{
+    border-bottom: 1px solid #dee2e6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* Popular Page Ends */
+
+/* Gallery Page Starts */
+
+
+#gallery{
+    margin: 0 8%;
+    border:  1px solid #dee2e6;
+    border-top: 0;
+}
+
+.galcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+}
+
+.gal{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 0px 15px;
+}
+
+.gallery{
+    border: 1px solid #dee2e6;
+    width: 100%;
+    /* height: 16rem ; */
+    padding: 0px 15px;
+}
+
+
+.gal1 img{
+    width: 100%;
+}
+
+.gal2 img{
+    width: 100%;
+}
+
+.gal3 img{
+    width: 100%;
+}
+
+.gal4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.gal5 img{
+    width: 100%;
+    height: 100%;
+}
+
+.gal6 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Gallery Page Ends */
+
+/* Team Page Starts */
+
+#team{
+    margin: 0 8%;
+    border:  1px solid #dee2e6;
+    border-top: 0;
+}
+
+.teamcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+}
+
+.teamhead{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 0px 15px;
+}
+
+.team{
+    border: 1px solid #dee2e6;
+    width: 100%;
+    /* height: 16rem ; */
+    padding: 0px 15px;
+}
+
+
+.guy1 img{
+    width: 100%;
+}
+
+.guy2 img{
+    width: 100%;
+}
+
+.guy3 img{
+    width: 100%;
+}
+
+.guy4 img{
+    width: 100%;
+
+}
+
+.guy5 img{
+    width: 100%;
+   
+}
+
+.guy6 img{
+    width: 100%;
+    
+}
+
+/* Team Page Ends */
+
+/* Contact Page Starts */
+
+#contact{
+    margin: 0 8%;
+    border:  1px solid #dee2e6;
+    border-top: 0;
+}
+
+.contcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: auto;
+}
+
+.conthead{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 0px 15px;
+}
+
+.contact{
+    border: 1px solid #dee2e6;
+    width: 100%;
+}
+
+.condetail1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.condetail1 img{
+    width: 100%;
+    height: 33rem;
+}
+
+.condetail2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.tablecont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    height: 21rem;
+    margin: 0px 15px;
+    padding: 10px;
+}
+
+.tablecont .einput{
+    border: 2px solid black;
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: large;
+    width: 80%;
+}
+
+.tablecont .btnAU{
+    cursor: pointer;
+    padding: 8px 35px;
+    margin: 15px;
+    background-color:#CC9966 ;
+    color: #ffff;
+    border-style: none;
+    font-size: medium;
+}
+
+
+h3{
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin-left: 15px;
+}
+
+.email h2{
+    margin-left: 15px;
+}
+
+.elogo i{
+    font-size: 2rem;
+    margin-left: 15px;
+    color: aquamarine;
+    border: 25px solid black;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.condetail7{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.line{
+    margin: 0px 15px;
+    padding-top: 17px;
+    border-bottom: 2px solid black;
+}
+
+.copy h4{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+span{
+    color: #dc3545;
+}
+/* Contact Page Ends */
